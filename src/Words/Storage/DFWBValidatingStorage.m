@@ -41,10 +41,50 @@
         NSString* hashKey = [NSString stringWithFormat:@"%hu",hash];
         DFWBBucket* bucket = [self.buckets objectForKey:hashKey];
         if (bucket) {
-            NSArray<DFWBMatch*>* matches = [bucket matchesForWord:word];
+            NSArray<DFWBMatch*>* matches = [self matchesFromBucket:bucket forWord:word];
             for (DFWBMatch* match in matches) {
                 [result addObject:match.match];
             }
+        }
+    }
+    return result;
+}
+- (NSArray<DFWBMatch*>*) matchesFromBucket:(DFWBBucket*)bucket forWord:(NSString*)word {
+    NSArray<DFWBMatch*>* matches = nil;
+    DFWBBucket* nextBucket = bucket;
+    while (nextBucket) {
+        if ((matches = [nextBucket matchesForWord:word]).count) {
+            break;
+        }
+        nextBucket = [self relatedBucket:nextBucket next:YES];
+    }
+    if (!matches.count) {
+        nextBucket = bucket;
+        while (nextBucket) {
+            if ((matches = [nextBucket matchesForWord:word]).count) {
+                break;
+            }
+            nextBucket = [self relatedBucket:nextBucket next:NO];
+        }
+    }
+    return matches;
+}
+- (DFWBBucket*) relatedBucket:(DFWBBucket*)bucket next:(BOOL)next; {
+    DFWBBucket* result = nil;
+    NSArray<NSString*>* names = [self.buckets.allKeys sortedArrayUsingSelector:@selector(compare:)];
+    NSUInteger index = [names indexOfObject:bucket.bucketName];
+    NSString* key = nil;
+    if (NSNotFound != index) {
+        
+        if (next) {
+            index ++;
+        } else {
+            index --;
+        }
+        
+        if (index < names.count) {
+            key = [names objectAtIndex:index];
+            result = [self.buckets objectForKey:key];
         }
     }
     return result;

@@ -32,6 +32,17 @@ int main(int argc, const char * argv[]) {
         }
         matches = [validator matchesForWord:@"sreena"];
         NSLog(@"!!! %@",matches);
+        if ([validator validateWord:@"meditation"]) {
+            NSLog(@"meditation!");
+        }
+        matches = [validator matchesForWord:@"medittion"];
+        NSLog(@"!!! %@",matches);
+        
+        matches = [validator matchesForWord:@"medition"];
+        NSLog(@"!!! %@",matches);
+        
+        matches = [validator matchesForWord:@"dormse"];
+        NSLog(@"!!! %@",matches);
     }
     return 0;
 }

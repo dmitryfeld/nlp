@@ -140,12 +140,12 @@
 		069BE1FA236C96BD006BC65B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				069BE1FB236C96BD006BC65B /* DFWBTools.c */,
-				069BE1FC236C96BD006BC65B /* DFWBMatch.m */,
-				069BE1FD236C96BD006BC65B /* DFWBSignature.m */,
 				069BE1FE236C96BD006BC65B /* DFWBTools.h */,
-				069BE1FF236C96BD006BC65B /* DFWBSignature.h */,
+				069BE1FB236C96BD006BC65B /* DFWBTools.c */,
 				069BE200236C96BD006BC65B /* DFWBMatch.h */,
+				069BE1FC236C96BD006BC65B /* DFWBMatch.m */,
+				069BE1FF236C96BD006BC65B /* DFWBSignature.h */,
+				069BE1FD236C96BD006BC65B /* DFWBSignature.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -154,13 +154,13 @@
 			isa = PBXGroup;
 			children = (
 				069BE202236C96BD006BC65B /* DFWBDirectory.h */,
-				069BE203236C96BD006BC65B /* DFWBFileWriter.h */,
-				069BE204236C96BD006BC65B /* DFWBFile.h */,
-				069BE205236C96BD006BC65B /* DFWBFileReader.m */,
 				069BE206236C96BD006BC65B /* DFWBDirectory.m */,
+				069BE203236C96BD006BC65B /* DFWBFileWriter.h */,
 				069BE207236C96BD006BC65B /* DFWBFileWriter.m */,
-				069BE208236C96BD006BC65B /* DFWBFileReader.h */,
+				069BE204236C96BD006BC65B /* DFWBFile.h */,
 				069BE209236C96BD006BC65B /* DFWBFile.m */,
+				069BE208236C96BD006BC65B /* DFWBFileReader.h */,
+				069BE205236C96BD006BC65B /* DFWBFileReader.m */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				069BE20B236C96BD006BC65B /* NSString+Lexo.h */,
-				069BE20C236C96BD006BC65B /* DFWBPhrase.h */,
 				069BE20D236C96BD006BC65B /* NSString+Lexo.m */,
+				069BE20C236C96BD006BC65B /* DFWBPhrase.h */,
 				069BE20E236C96BD006BC65B /* DFWBPhrase.m */,
 			);
 			path = Lexo;
@@ -180,11 +180,11 @@
 			isa = PBXGroup;
 			children = (
 				069BE21A236C96C8006BC65B /* DFWBBucket.h */,
-				069BE21B236C96C8006BC65B /* DFWBValidatingStorage.h */,
-				069BE21C236C96C8006BC65B /* DFWBStorage.m */,
-				069BE21D236C96C8006BC65B /* DFWBValidatingStorage.m */,
 				069BE21E236C96C8006BC65B /* DFWBBucket.m */,
+				069BE21B236C96C8006BC65B /* DFWBValidatingStorage.h */,
+				069BE21D236C96C8006BC65B /* DFWBValidatingStorage.m */,
 				069BE21F236C96C8006BC65B /* DFWBStorage.h */,
+				069BE21C236C96C8006BC65B /* DFWBStorage.m */,
 			);
 			name = Storage;
 			path = ../../Storage;
