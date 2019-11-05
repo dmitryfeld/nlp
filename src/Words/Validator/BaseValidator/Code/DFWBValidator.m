@@ -19,7 +19,7 @@
 @dynamic lastError;
 - (instancetype) initWithRootPath:(NSString*)rootPath {
     if (self = [super init]) {
-        _storage = [[DFWBValidatingStorage alloc] initWithPath:rootPath andStorageName:@"Storage"];
+        _storage = [[DFWBValidatingStorage alloc] initWithPath:rootPath andStorageName:@"AllWords"];
         [_storage load];
     }
     return self;

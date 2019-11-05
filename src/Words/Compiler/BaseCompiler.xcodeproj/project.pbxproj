@@ -20,7 +20,6 @@
 		069BE1EA236C95EB006BC65B /* NSString+Lexo.m in Sources */ = {isa = PBXBuildFile; fileRef = 069BE1E0236C95EB006BC65B /* NSString+Lexo.m */; };
 		069BE1EB236C95EB006BC65B /* DFWBPhrase.m in Sources */ = {isa = PBXBuildFile; fileRef = 069BE1E1236C95EB006BC65B /* DFWBPhrase.m */; };
 		069BE1F3236C95F6006BC65B /* DFWBStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 069BE1EF236C95F5006BC65B /* DFWBStorage.m */; };
-		069BE1F4236C95F6006BC65B /* DFWBValidatingStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 069BE1F0236C95F5006BC65B /* DFWBValidatingStorage.m */; };
 		069BE1F5236C95F6006BC65B /* DFWBBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 069BE1F1236C95F5006BC65B /* DFWBBucket.m */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +61,7 @@
 		069BE1E0236C95EB006BC65B /* NSString+Lexo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Lexo.m"; sourceTree = "<group>"; };
 		069BE1E1236C95EB006BC65B /* DFWBPhrase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBPhrase.m; sourceTree = "<group>"; };
 		069BE1ED236C95F5006BC65B /* DFWBBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBBucket.h; sourceTree = "<group>"; };
-		069BE1EE236C95F5006BC65B /* DFWBValidatingStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBValidatingStorage.h; sourceTree = "<group>"; };
 		069BE1EF236C95F5006BC65B /* DFWBStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBStorage.m; sourceTree = "<group>"; };
-		069BE1F0236C95F5006BC65B /* DFWBValidatingStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBValidatingStorage.m; sourceTree = "<group>"; };
 		069BE1F1236C95F5006BC65B /* DFWBBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBBucket.m; sourceTree = "<group>"; };
 		069BE1F2236C95F5006BC65B /* DFWBStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBStorage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,8 +180,6 @@
 				069BE1F1236C95F5006BC65B /* DFWBBucket.m */,
 				069BE1F2236C95F5006BC65B /* DFWBStorage.h */,
 				069BE1EF236C95F5006BC65B /* DFWBStorage.m */,
-				069BE1EE236C95F5006BC65B /* DFWBValidatingStorage.h */,
-				069BE1F0236C95F5006BC65B /* DFWBValidatingStorage.m */,
 			);
 			name = Storage;
 			path = ../../Storage;
@@ -259,7 +254,6 @@
 				069BE1F5236C95F6006BC65B /* DFWBBucket.m in Sources */,
 				069BE1F3236C95F6006BC65B /* DFWBStorage.m in Sources */,
 				008BD06F1D4B240F0066C9E1 /* main.m in Sources */,
-				069BE1F4236C95F6006BC65B /* DFWBValidatingStorage.m in Sources */,
 				00ABBEF91D601FA8004EA0EA /* DFWBCompiler.m in Sources */,
 				069BE1E5236C95EB006BC65B /* DFWBSignature.m in Sources */,
 			);

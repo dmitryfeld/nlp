@@ -32,7 +32,7 @@
 }
 - (void) execute {
     DFWBFileReader* reader = [[DFWBFileReader alloc] initWithPath:_inputPath];
-    DFWBStorage* storage = [[DFWBStorage alloc] initWithPath:_rootPath andStorageName:@"Storage"];
+    DFWBStorage* storage = [[DFWBStorage alloc] initWithPath:_rootPath andStorageName:@"AllWords"];
     NSString* line = nil;
     [storage deploy];
     [reader open];
