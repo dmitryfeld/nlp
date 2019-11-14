@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065AF65B2374F4200089CBAD /* DFWBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 065AF6592374F4200089CBAD /* DFWBValidator.m */; };
+		065AF65E2374FD6B0089CBAD /* DFWBSynLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 065AF65D2374FD6B0089CBAD /* DFWBSynLine.m */; };
+		06C0755A2375125200EBAED9 /* DFWBStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C075562375125200EBAED9 /* DFWBStorage.m */; };
+		06C0755B2375125200EBAED9 /* DFWBValidatingStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C075572375125200EBAED9 /* DFWBValidatingStorage.m */; };
+		06C0755C2375125200EBAED9 /* DFWBBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C075582375125200EBAED9 /* DFWBBucket.m */; };
 		06D2D75A2370F24F00527388 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D2D7592370F24F00527388 /* main.m */; };
 		06FF3B122370F2C800964B28 /* NSError+Errno.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FF3AFC2370F2C800964B28 /* NSError+Errno.m */; };
 		06FF3B132370F2C800964B28 /* DFWBTools.c in Sources */ = {isa = PBXBuildFile; fileRef = 06FF3AFE2370F2C800964B28 /* DFWBTools.c */; };
@@ -35,6 +40,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		065AF6592374F4200089CBAD /* DFWBValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBValidator.m; sourceTree = "<group>"; };
+		065AF65A2374F4200089CBAD /* DFWBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBValidator.h; sourceTree = "<group>"; };
+		065AF65C2374FD6B0089CBAD /* DFWBSynLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFWBSynLine.h; sourceTree = "<group>"; };
+		065AF65D2374FD6B0089CBAD /* DFWBSynLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFWBSynLine.m; sourceTree = "<group>"; };
+		06C075542375125200EBAED9 /* DFWBBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBBucket.h; sourceTree = "<group>"; };
+		06C075552375125200EBAED9 /* DFWBValidatingStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBValidatingStorage.h; sourceTree = "<group>"; };
+		06C075562375125200EBAED9 /* DFWBStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBStorage.m; sourceTree = "<group>"; };
+		06C075572375125200EBAED9 /* DFWBValidatingStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBValidatingStorage.m; sourceTree = "<group>"; };
+		06C075582375125200EBAED9 /* DFWBBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBBucket.m; sourceTree = "<group>"; };
+		06C075592375125200EBAED9 /* DFWBStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBStorage.h; sourceTree = "<group>"; };
 		06D2D7562370F24F00527388 /* SynProcessor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SynProcessor; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D2D7592370F24F00527388 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06FF3AFB2370F2C800964B28 /* NSError+Errno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Errno.h"; sourceTree = "<group>"; };
@@ -74,6 +89,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065AF6572374F3D20089CBAD /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				065AF6582374F4200089CBAD /* Exportable */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		065AF6582374F4200089CBAD /* Exportable */ = {
+			isa = PBXGroup;
+			children = (
+				065AF65A2374F4200089CBAD /* DFWBValidator.h */,
+				065AF6592374F4200089CBAD /* DFWBValidator.m */,
+			);
+			name = Exportable;
+			path = ../../../../../Words/Validator/BaseValidator/Code/Exportable;
+			sourceTree = "<group>";
+		};
+		06C075532375125200EBAED9 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				06C075542375125200EBAED9 /* DFWBBucket.h */,
+				06C075582375125200EBAED9 /* DFWBBucket.m */,
+				06C075552375125200EBAED9 /* DFWBValidatingStorage.h */,
+				06C075572375125200EBAED9 /* DFWBValidatingStorage.m */,
+				06C075592375125200EBAED9 /* DFWBStorage.h */,
+				06C075562375125200EBAED9 /* DFWBStorage.m */,
+			);
+			name = Storage;
+			path = ../../../../Words/Storage;
+			sourceTree = "<group>";
+		};
 		06D2D74D2370F24F00527388 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +150,8 @@
 		06FF3AF82370F2BB00964B28 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				06C075532375125200EBAED9 /* Storage */,
+				065AF6572374F3D20089CBAD /* Validator */,
 				06FF3B1F2370FE6400964B28 /* Storage */,
 				06FF3B1C2370FD7A00964B28 /* DFWBSynProcessor.h */,
 				06FF3B1D2370FD7A00964B28 /* DFWBSynProcessor.m */,
@@ -134,12 +183,12 @@
 		06FF3AFD2370F2C800964B28 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				06FF3AFE2370F2C800964B28 /* DFWBTools.c */,
-				06FF3AFF2370F2C800964B28 /* DFWBMatch.m */,
-				06FF3B002370F2C800964B28 /* DFWBSignature.m */,
 				06FF3B012370F2C800964B28 /* DFWBTools.h */,
-				06FF3B022370F2C800964B28 /* DFWBSignature.h */,
+				06FF3AFE2370F2C800964B28 /* DFWBTools.c */,
 				06FF3B032370F2C800964B28 /* DFWBMatch.h */,
+				06FF3AFF2370F2C800964B28 /* DFWBMatch.m */,
+				06FF3B022370F2C800964B28 /* DFWBSignature.h */,
+				06FF3B002370F2C800964B28 /* DFWBSignature.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -175,6 +224,8 @@
 			children = (
 				06FF3B202370FE8D00964B28 /* DFWBSynStorage.h */,
 				06FF3B212370FE8D00964B28 /* DFWBSynStorage.m */,
+				065AF65C2374FD6B0089CBAD /* DFWBSynLine.h */,
+				065AF65D2374FD6B0089CBAD /* DFWBSynLine.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -235,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C0755C2375125200EBAED9 /* DFWBBucket.m in Sources */,
+				06C0755A2375125200EBAED9 /* DFWBStorage.m in Sources */,
 				06FF3B192370F2C800964B28 /* DFWBFile.m in Sources */,
+				065AF65B2374F4200089CBAD /* DFWBValidator.m in Sources */,
 				06FF3B132370F2C800964B28 /* DFWBTools.c in Sources */,
 				06FF3B1B2370F2C800964B28 /* DFWBPhrase.m in Sources */,
+				065AF65E2374FD6B0089CBAD /* DFWBSynLine.m in Sources */,
 				06FF3B162370F2C800964B28 /* DFWBFileReader.m in Sources */,
 				06FF3B1A2370F2C800964B28 /* NSString+Lexo.m in Sources */,
 				06FF3B122370F2C800964B28 /* NSError+Errno.m in Sources */,
@@ -245,6 +300,7 @@
 				06FF3B182370F2C800964B28 /* DFWBFileWriter.m in Sources */,
 				06FF3B1E2370FD7A00964B28 /* DFWBSynProcessor.m in Sources */,
 				06FF3B152370F2C800964B28 /* DFWBSignature.m in Sources */,
+				06C0755B2375125200EBAED9 /* DFWBValidatingStorage.m in Sources */,
 				06FF3B142370F2C800964B28 /* DFWBMatch.m in Sources */,
 				06FF3B172370F2C800964B28 /* DFWBDirectory.m in Sources */,
 				06D2D75A2370F24F00527388 /* main.m in Sources */,

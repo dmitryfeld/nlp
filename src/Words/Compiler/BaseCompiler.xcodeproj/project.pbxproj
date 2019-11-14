@@ -64,6 +64,7 @@
 		069BE1EF236C95F5006BC65B /* DFWBStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBStorage.m; sourceTree = "<group>"; };
 		069BE1F1236C95F5006BC65B /* DFWBBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFWBBucket.m; sourceTree = "<group>"; };
 		069BE1F2236C95F5006BC65B /* DFWBStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFWBStorage.h; sourceTree = "<group>"; };
+		06C0755F2379D57F00EBAED9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 			children = (
 				008BD06D1D4B240F0066C9E1 /* BaseCompiler */,
 				008BD06C1D4B240F0066C9E1 /* Products */,
+				06C0755E2379D57F00EBAED9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +185,14 @@
 			);
 			name = Storage;
 			path = ../../Storage;
+			sourceTree = "<group>";
+		};
+		06C0755E2379D57F00EBAED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C0755F2379D57F00EBAED9 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
