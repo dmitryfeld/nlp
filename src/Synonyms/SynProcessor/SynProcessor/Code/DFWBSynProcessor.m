@@ -9,6 +9,8 @@
 #import "DFWBSynProcessor.h"
 #import "DFWBFileReader.h"
 #import "DFWBFileWriter.h"
+#import "DFWBSynLine.h"
+
 
 @interface DFWBSynProcessor() {
 @private
@@ -26,7 +28,7 @@
     if (self = [super init]) {
         _rootPath = [rootPath copy];
         _inputPath = [rootPath stringByAppendingPathComponent:@"synonyms_in.txt"];
-        _outputPath = [rootPath stringByAppendingPathComponent:@"synonyms.txt"];
+        _outputPath = [rootPath stringByAppendingPathComponent:@"synonyms_out.txt"];
     }
     return self;
 }
@@ -39,11 +41,11 @@
     if ((!reader.lastError) && (!writer.lastError)) {
         while (reader.canRead) {
             line = [reader nextLine];
-            NSLog(@">>>%@<<<",line);
+            line = [self validateLine:line];
             if (line.length) {
-                if (![self hasAntonym:line]) {
-                    [writer writeLine:line];
-                }
+                //NSLog(@">>>%@<<<",line);
+                [writer writeLine:line];
+                [writer writeLine:@""];
             }
         }
     }
@@ -55,11 +57,11 @@
         _lastError = reader.lastError;
     }
 }
-- (BOOL) hasAntonym:(NSString*)line {
-    BOOL result = NO;
-    NSRange range = [line rangeOfString:@"ANT."];
-    if (0 == range.location) {
-        result = YES;
+- (NSString*) validateLine:(NSString*)string {
+    NSString* result = nil;
+    DFWBSynLine* line = [[DFWBSynLine alloc] initWithLine:string];
+    if (line.word.length) {
+        result = line.resultingLine;
     }
     return result;
 }
