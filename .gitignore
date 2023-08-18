@@ -6,3 +6,7 @@ src/Words/Compiler/BaseCompiler.xcodeproj/project.xcworkspace/xcshareddata/IDEWo
 src/Words/Compiler/BaseCompiler.xcodeproj/project.xcworkspace/xcuserdata/dmitryfeld.xcuserdatad/UserInterfaceState.xcuserstate
 src/Words/Compiler/BaseCompiler.xcodeproj/xcshareddata/xcschemes/BaseCompiler.xcscheme
 src/Words/Compiler/BaseCompiler.xcodeproj/xcuserdata/dmitryfeld.xcuserdatad/xcschemes/xcschememanagement.plist
+src/Words/Validator/BaseValidator.xcodeproj/xcuserdata/dmitryfeld.xcuserdatad/xcschemes/xcschememanagement.plist
+src/Words/Validator/BaseValidator.xcodeproj/project.xcworkspace/xcuserdata/dmitryfeld.xcuserdatad/UserInterfaceState.xcuserstate
+src/Words/Validator/BaseValidator.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+src/Words/Validator/BaseValidator.xcodeproj/project.xcworkspace/contents.xcworkspacedata
