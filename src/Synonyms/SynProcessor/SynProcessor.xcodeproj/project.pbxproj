@@ -94,8 +94,9 @@
 			children = (
 				065AF6582374F4200089CBAD /* Exportable */,
 			);
-			path = Validator;
-			sourceTree = "<group>";
+			name = Validator;
+			path = SynProcessor/Code/Validator;
+			sourceTree = SOURCE_ROOT;
 		};
 		065AF6582374F4200089CBAD /* Exportable */ = {
 			isa = PBXGroup;
@@ -104,8 +105,8 @@
 				065AF6592374F4200089CBAD /* DFWBValidator.m */,
 			);
 			name = Exportable;
-			path = ../../../../../Words/Validator/BaseValidator/Code/Exportable;
-			sourceTree = "<group>";
+			path = ../../Words/Validator/BaseValidator/Code/Exportable;
+			sourceTree = SOURCE_ROOT;
 		};
 		06C075532375125200EBAED9 /* Storage */ = {
 			isa = PBXGroup;
